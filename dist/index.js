@@ -31235,7 +31235,7 @@ var githubExports = requireGithub();
  */
 async function run() {
     try {
-        const githubToken = coreExports.getInput("token");
+        const githubToken = coreExports.getInput("github-token");
         const octokit = githubExports.getOctokit(githubToken);
         const workflowRun = await octokit.rest.actions.getWorkflowRun({
             owner: githubExports.context.repo.owner,
