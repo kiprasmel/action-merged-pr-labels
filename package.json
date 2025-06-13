@@ -23,12 +23,11 @@
 		"node": ">=20"
 	},
 	"scripts": {
-		"bundle": "npm run format:write && npm run package",
+		"bundle": "npm run lint:fix && npm run package",
 		"ci-test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
 		"coverage": "npx make-coverage-badge --output-path ./badges/coverage.svg",
-		"format:write": "npx prettier --write .",
-		"format:check": "npx prettier --check .",
 		"lint": "npx eslint --ignore-pattern '*.md' .",
+		"lint:fix": "npm run lint --fix",
 		"local-action": "npx @github/local-action . src/main.ts .env",
 		"package": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
 		"package:watch": "npm run package -- --watch",
