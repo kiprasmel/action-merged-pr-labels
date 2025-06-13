@@ -1,5 +1,5 @@
 name: merged-pr-labels
-description: Get labels of Pull Request associated with the commit that triggered your workflow. Easy way to automate processes by using pull request labels
+description: Automate processes with pull request labels. Get labels of PR associated with the commit that triggered your workflow.
 author: kiprasmel
 
 branding:
