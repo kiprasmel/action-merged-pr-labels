@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.ts"],"sourcesContent":["import { run } from \"./main\";\n\n/* istanbul ignore next */\nrun();\n"],"names":[],"mappings":";AAAA,MAA6B,MAAA,GAAA,OAAA,CAAA,QAAA,CAAA;AAE7B;AACA,IAAA,MAAA,CAAA,GAAG,GAAE"}
