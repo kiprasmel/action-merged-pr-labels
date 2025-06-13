@@ -6,7 +6,7 @@ import * as github from "@actions/github";
  */
 export async function run(): Promise<void> {
 	try {
-		const githubToken = core.getInput("token");
+		const githubToken = core.getInput("github-token");
 		const octokit = github.getOctokit(githubToken);
 
 		const workflowRun = await octokit.rest.actions.getWorkflowRun({

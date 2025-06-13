@@ -7,10 +7,9 @@ branding:
   color: red
 
 inputs:
-  token:
+  github-token:
     description: GitHub token
     required: true
-    default: ${{ github.token }}
 
 outputs:
   labels:
